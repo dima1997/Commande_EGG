@@ -4,13 +4,9 @@ from Tools.FontRender import RenderFont, RenderFontBold
 from Tools.PictureUploads import Loadify, TransformImage
 from FreqTest import FreqTest
 from MapTest import MapTest
-from parameter_menu import ParameterMenu
 from LeftRightTest import LeftRightTest
 from Menu.SettingSaves import GetRes
 from SettingsMenuEEG import ParameterMenu
-
-
-
 
 """Main Menu"""
 def MainMenu(screen):
