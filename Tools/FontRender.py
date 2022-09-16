@@ -11,7 +11,7 @@ def RenderFont(text, size, colour):
     return pygame.font.SysFont("Corbel",size).render(text, True, colour)
 
 
-class CreateNumber(object):
+class CreateNumber(object): # Not used
     def __init__(self, text, width, height, screen, sign):
         self.width = width
         self.height = height
@@ -38,7 +38,7 @@ class CreateNumber(object):
                 self.is_comma.append(1)
             self.text_list.append(numbers)
 
-    def ShowNumber(self, x_position, y_position):
+    def ShowNumber(self, x_position, y_position): # Not used
         counter = 0
         for numbers in self.text_list:
             if self.is_comma[counter] == 0:

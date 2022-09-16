@@ -19,7 +19,7 @@ def LoadBackgroundImages():
     return background_list
 
 
-def LoadUpgradeBars():
+def LoadUpgradeBars(): # Not used
     bar_list = []
     upgrade_bar = pygame.image.load("Images/UpgradeBars/Upgrade bar unlit.png").convert_alpha()
     upgrade_bar = TransformImage(upgrade_bar, 400, 75)
@@ -31,7 +31,7 @@ def LoadUpgradeBars():
     return bar_list
 
 
-def LoadUpgradeButtons():
+def LoadUpgradeButtons(): # Not used
     button_list = []
     for image in range(9):
         button = pygame.image.load("Images/Buttons/Upgrade Button" + str((image + 1)) + ".png")
@@ -42,7 +42,7 @@ def LoadUpgradeButtons():
     return button_list
 
 
-def LoadUpgradeLevels():
+def LoadUpgradeLevels(): # Not used
     level_list = []
     for image in range(11):
         level = Loadify("Images/UpgradeLevel/upgrade level " + str(image) + ".png")
