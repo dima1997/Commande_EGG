@@ -10,15 +10,6 @@ def TransformImage(img, x, y):
     return pygame.transform.scale(img, [x,y])
 
 
-def LoadBackgroundImages():
-    background_image_1 = pygame.image.load(os.path.join("Images", "Backgrounds", "Start line finished 1.png")).convert_alpha()
-    background_image_2 = pygame.image.load("Images/Backgrounds/wake me up insidet.png").convert_alpha()
-    background_image_1 = TransformImage(background_image_1, 1920, 1080)
-    background_image_2 = TransformImage(background_image_2, 1920, 1080)
-    background_list = [background_image_1, background_image_2, background_image_2]
-    return background_list
-
-
 def LoadUpgradeBars(): # Not used
     bar_list = []
     upgrade_bar = pygame.image.load("Images/UpgradeBars/Upgrade bar unlit.png").convert_alpha()
