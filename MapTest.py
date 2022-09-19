@@ -76,10 +76,6 @@ class MapTest(object):
             self.screen.blit(self.tank1, tank1coords)
             self.screen.blit(self.tank3, tank3coords)
             self.screen.blit(self.heliblack, helicoords)
-            alpha_detected = False
-            beta_detected = True
-            mx, my = pygame.mouse.get_pos()
-            click = False
             # --- updates ---
 
             current_time = pygame.time.get_ticks()
@@ -114,23 +110,17 @@ class MapTest(object):
                     if event.key == pygame.K_ESCAPE:
                         self.on_race_menu = False
                     if event.key == pygame.K_1:
-                        alpha_detected = 1
                         self.tank2 = self.tankgreendown
                     if event.key == pygame.K_2:
-                        beta_detected = 1
                         self.tank4 = self.tankgreenleft
                     if event.key == pygame.K_3:
-                        theta_detected = 1
                         self.heli1 = self.heligreen
                 if event.type == pygame.KEYUP:
                     if event.key == pygame.K_1:
-                        alpha_detected = 1
                         self.tank2 = self.tankreddown
                     if event.key == pygame.K_2:
-                        alpha_detected = 1
                         self.tank4 = self.tankredleft
                     if event.key == pygame.K_3:
-                        theta_detected = 1
                         self.heli1 = self.helired
 
             pygame.display.update()
