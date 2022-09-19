@@ -1,27 +1,15 @@
 import pygame
 from Tools.FontRender import RenderFont
-
-
+import colors as C
 
 class FreqTest(object):
     def __init__(self, screen):
-        #############
-        # Colours
-        #############
-        self.LBLUE = (0, 204, 204)
-        self.BLACK = (0, 0, 0)
-        self.RED = (180, 30, 30)
-        self.GREEN = (30, 180, 30)
-        self.GREY = (150, 150, 150)
-        self.LGREY = (200, 200, 200)
-        self.WHITE = (252, 252, 252)
-        #############
         self.screen = screen
         self.on_race_menu = True
         self.screen_width, self.screen_height = pygame.display.get_surface().get_size()
         self.button_list = []
-        self.templeft = RenderFont("β", 300, self.WHITE)
-        self.tempright = RenderFont("α", 300, self.WHITE)
+        self.templeft = RenderFont("β", 300, C.WHITE)
+        self.tempright = RenderFont("α", 300, C.WHITE)
 
     def DrawButtons(self):
 
@@ -53,9 +41,9 @@ class FreqTest(object):
             alpha_detected = False
             beta_detected = True
             mx, my = pygame.mouse.get_pos()
-            self.screen.fill(self.LGREY)
-            pygame.draw.circle(self.screen, self.WHITE, self.button_list[0].center, 420)
-            pygame.draw.circle(self.screen, self.WHITE, self.button_list[1].center, 420)
+            self.screen.fill(C.LGREY)
+            pygame.draw.circle(self.screen, C.WHITE, self.button_list[0].center, 420)
+            pygame.draw.circle(self.screen, C.WHITE, self.button_list[1].center, 420)
             click = False
 
             # --- updates ---
@@ -63,10 +51,10 @@ class FreqTest(object):
 
             # is time to change ?
             if show_alpha:
-                pygame.draw.circle(self.screen, self.BLACK, self.button_list[1].center, 400)
+                pygame.draw.circle(self.screen, C.BLACK, self.button_list[1].center, 400)
 
             if show_beta:
-                pygame.draw.circle(self.screen, self.BLACK, self.button_list[0].center, 400)
+                pygame.draw.circle(self.screen, C.BLACK, self.button_list[0].center, 400)
 
             if current_time >= change_time_alpha:
                 # time of next change
@@ -87,7 +75,7 @@ class FreqTest(object):
                     if event.key == pygame.K_BACKSPACE:
                         pressed = True
                         while pressed:
-                            self.screen.fill(self.BLACK)
+                            self.screen.fill(C.BLACK)
                             pygame.display.update()
                             for event1 in pygame.event.get():
                                 if event1.type == pygame.KEYUP:
