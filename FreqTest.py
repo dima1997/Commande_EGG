@@ -54,21 +54,11 @@ class FreqTest(object):
             beta_detected = True
             mx, my = pygame.mouse.get_pos()
             self.screen.fill(self.LGREY)
-            #pygame.draw.rect(self.screen, self.RED, self.button_list[2])
             pygame.draw.circle(self.screen, self.WHITE, self.button_list[0].center, 420)
             pygame.draw.circle(self.screen, self.WHITE, self.button_list[1].center, 420)
-
-                # if buttons.collidepoint(mx, my):
-                #     pygame.draw.rect(self.screen, self.GREEN, buttons)
-                #     if click:
-                #         if self.button_list.index(buttons) == 0:
-                #             TierMenu(self.screen).DisplayWindow()
             click = False
-            #self.screen.blit(self.templeft, [self.button_list[0].center[0]-75,self.button_list[0].center[1]-150])
-            #self.screen.blit(self.tempright, [self.button_list[1].center[0]-80,self.button_list[2].center[1]-150])
 
             # --- updates ---
-
             current_time = pygame.time.get_ticks()
 
             # is time to change ?
@@ -88,27 +78,11 @@ class FreqTest(object):
                 change_time_beta = current_time + delay_beta
                 show_beta = not show_beta
 
-
-
-            # --- draws centre line ---
-
-            #pygame.draw.rect(self.screen, self.GREEN, self.button_list[3], 15)
-
-
-
             for event in pygame.event.get():
                 if event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_ESCAPE:
                         self.on_race_menu = False
 
-#  0                  if event.key == pygame.K_RIGHT:
-#                        print("right")
-#                        alpha_detected = 1
-#                        self.button_list[3].move_ip(20,0)
-#                    if event.key == pygame.K_LEFT:
-#                        beta_detected = 1
-#                        print("left")
-#                        self.button_list[3].move_ip(-20, 0)
                 if event.type == pygame.KEYUP:
                     if event.key == pygame.K_BACKSPACE:
                         pressed = True
