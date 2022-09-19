@@ -88,13 +88,6 @@ class MapTest(object):
             alpha_detected = False
             beta_detected = True
             mx, my = pygame.mouse.get_pos()
-
-
-                # if buttons.collidepoint(mx, my):
-                #     pygame.draw.rect(self.screen, self.GREEN, buttons)
-                #     if click:
-                #         if self.button_list.index(buttons) == 0:
-                #             TierMenu(self.screen).DisplayWindow()
             click = False
             # --- updates ---
 
@@ -125,9 +118,6 @@ class MapTest(object):
                 change_time_theta = current_time + delay_theta
                 show_theta = not show_theta
 
-
-
-
             for event in pygame.event.get():
                 if event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_ESCAPE:
@@ -151,9 +141,6 @@ class MapTest(object):
                     if event.key == pygame.K_3:
                         theta_detected = 1
                         self.heli1 = self.helired
-
-
-
 
             pygame.display.update()
 
