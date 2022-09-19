@@ -43,18 +43,11 @@ class LeftRightTest(object):
             pygame.draw.rect(self.screen, self.RED, self.button_list[2])
             pygame.draw.circle(self.screen, self.GREY, self.button_list[0].center, 200)
             pygame.draw.circle(self.screen, self.GREY, self.button_list[1].center, 200)
-
-                # if buttons.collidepoint(mx, my):
-                #     pygame.draw.rect(self.screen, self.GREEN, buttons)
-                #     if click:
-                #         if self.button_list.index(buttons) == 0:
-                #             TierMenu(self.screen).DisplayWindow()
             click = False
             self.screen.blit(self.templeft, [self.button_list[0].center[0]-75,self.button_list[0].center[1]-150])
             self.screen.blit(self.tempright, [self.button_list[1].center[0]-80,self.button_list[2].center[1]-150])
 
             pygame.draw.rect(self.screen, self.GREEN, self.button_list[3], 15)
-
 
             for event in pygame.event.get():
                 if event.type == pygame.KEYDOWN:
@@ -66,7 +59,6 @@ class LeftRightTest(object):
                     if event.key == pygame.K_LEFT:
                         print("left")
                         self.button_list[3].move_ip(-20, 0)
-
 
             pygame.display.update()
 
