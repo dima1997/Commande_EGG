@@ -1,5 +1,5 @@
 import pygame
-from Tools.FontRender import RenderFont, RenderFontBold
+from Tools.FontRender import RenderFontBold
 from Tools.PictureUploads import Loadify, TransformImage
 import Initialise
 
