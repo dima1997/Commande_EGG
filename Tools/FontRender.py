@@ -1,6 +1,4 @@
 import pygame
-from Tools.PictureUploads import Loadify, TransformImage
-
 
 def RenderFontBold(text, size, colour):
     """Easy function that allows you to render a font quickly"""
