@@ -112,16 +112,16 @@ class MapTest(object):
                     if event.key == pygame.K_1:
                         self.tank2 = self.tankgreendown
                     if event.key == pygame.K_2:
-                        self.tank4 = self.tankgreenleft
-                    if event.key == pygame.K_3:
                         self.heli1 = self.heligreen
+                    if event.key == pygame.K_3:
+                        self.tank4 = self.tankgreenleft
                 if event.type == pygame.KEYUP:
                     if event.key == pygame.K_1:
                         self.tank2 = self.tankreddown
                     if event.key == pygame.K_2:
-                        self.tank4 = self.tankredleft
-                    if event.key == pygame.K_3:
                         self.heli1 = self.helired
+                    if event.key == pygame.K_3:
+                        self.tank4 = self.tankredleft
 
             pygame.display.update()
 
