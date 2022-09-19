@@ -1,6 +1,6 @@
 import Initialise
 import pygame
-from Tools.FontRender import RenderFont, RenderFontBold
+from Tools.FontRender import RenderFontBold
 from Tools.PictureUploads import Loadify, TransformImage
 from FreqTest import FreqTest
 from MapTest import MapTest
@@ -24,9 +24,6 @@ def MainMenu(screen):
     font3 = RenderFontBold("Map Test", 57, WHITE)
     font4 = RenderFontBold("Settings", 30, WHITE)
     font4 = pygame.transform.rotate(font4, -90)
-    #font3 = RenderFont("Upgrades [3]", 20, BLACK)
-    #font4 = RenderFont("Shop [4]", 20, BLACK)
-    #font5 = RenderFont("Staff [5]", 20, BLACK)
 
     button_width = 500
     button_length = 250
@@ -73,8 +70,6 @@ def MainMenu(screen):
         screen.blit(font3, [font3coords[0]+125,font3coords[1]+95])
 
         screen.blit(font4, [font4coords[0] + 35, font4coords[1] + 50])
-        #screen.blit(font4, [950, 600])
-        #screen.blit(font5, [950, 750])
 
         click = False
         for event in pygame.event.get():
