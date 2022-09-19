@@ -2,6 +2,7 @@ import pygame
 from Tools.FontRender import RenderFont
 from Tools.PictureUploads import Loadify, TransformImage
 import Initialise
+import colors as C
 
 
 # To do. Add a button for the screen to go black. Increase contrast and size of left and right side
@@ -10,16 +11,6 @@ import Initialise
 
 class MapTest(object):
     def __init__(self, screen):
-        #############
-        # Colours
-        #############
-        self.LBLUE = (0, 204, 204)
-        self.BLACK = (0, 0, 0)
-        self.RED = (180, 30, 30)
-        self.GREEN = (30, 180, 30)
-        self.GREY = (150, 150, 150)
-        self.LGREY = (200, 200, 200)
-        self.WHITE = (252, 252, 252)
         self.background_image = Loadify("Images/Backgrounds/map.jpg")
         self.background_image = TransformImage(self.background_image, Initialise.width, Initialise.height)
         self.tank1= Loadify("Images/models/tank1.png")
@@ -55,8 +46,8 @@ class MapTest(object):
         self.on_race_menu = True
         self.screen_width, self.screen_height = pygame.display.get_surface().get_size()
         self.button_list = []
-        self.templeft = RenderFont("β", 300, self.WHITE)
-        self.tempright = RenderFont("α", 300, self.WHITE)
+        self.templeft = RenderFont("β", 300, C.WHITE)
+        self.tempright = RenderFont("α", 300, C.WHITE)
 
 
     def DisplayWindow(self):
