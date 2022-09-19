@@ -27,14 +27,10 @@ class LeftRightTest(object):
         self.DrawButtons()
 
         while self.on_race_menu:
-            alpha_detected = False
-            beta_detected = True
-            mx, my = pygame.mouse.get_pos()
             self.screen.fill(C.LGREY)
             pygame.draw.rect(self.screen, C.RED, self.button_list[2])
             pygame.draw.circle(self.screen, C.GREY, self.button_list[0].center, 200)
             pygame.draw.circle(self.screen, C.GREY, self.button_list[1].center, 200)
-            click = False
             self.screen.blit(self.templeft, [self.button_list[0].center[0]-75,self.button_list[0].center[1]-150])
             self.screen.blit(self.tempright, [self.button_list[1].center[0]-80,self.button_list[2].center[1]-150])
 
