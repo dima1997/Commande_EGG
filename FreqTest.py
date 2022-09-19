@@ -38,13 +38,9 @@ class FreqTest(object):
         show_alpha = True
         show_beta = True
         while self.on_race_menu:
-            alpha_detected = False
-            beta_detected = True
-            mx, my = pygame.mouse.get_pos()
             self.screen.fill(C.LGREY)
             pygame.draw.circle(self.screen, C.WHITE, self.button_list[0].center, 420)
             pygame.draw.circle(self.screen, C.WHITE, self.button_list[1].center, 420)
-            click = False
 
             # --- updates ---
             current_time = pygame.time.get_ticks()
