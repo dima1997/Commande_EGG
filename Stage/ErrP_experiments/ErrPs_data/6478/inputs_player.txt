@@ -1,0 +1,139 @@
+1,None
+2,clash
+3,clash
+4,match
+5,match
+6,None
+7,match
+8,None
+9,clash
+10,match
+11,clash
+12,clash
+13,clash
+14,clash
+15,clash
+16,clash
+17,clash
+18,None
+19,clash
+20,None
+21,clash
+22,match
+23,clash
+24,None
+25,clash
+26,clash
+27,clash
+28,clash
+29,clash
+30,clash
+31,clash
+32,clash
+33,match e1
+34,clash e1
+35,match
+36,None
+37,None
+38,None
+39,clash e1
+40,match
+41,None
+42,clash
+43,clash e1
+44,clash
+45,None
+46,clash
+47,clash
+48,clash
+49,None
+50,match
+51,match
+52,match
+53,clash
+54,match
+55,clash
+56,match e1
+57,None
+58,None
+59,match e1
+60,match e1
+61,match
+62,clash
+63,clash
+64,clash
+65,clash
+66,match
+67,clash
+68,clash
+69,match
+70,match
+71,clash
+72,match
+73,match
+74,match
+75,clash
+76,clash
+77,match
+78,None
+79,match
+80,match
+81,None
+82,match
+83,clash
+84,clash
+85,clash
+86,clash
+87,clash
+88,clash
+89,clash
+90,clash
+91,clash
+92,match
+93,clash
+94,match
+95,clash
+96,match
+97,None
+98,clash
+99,None
+100,clash
+101,clash
+102,None
+103,clash
+104,match
+105,clash
+106,None
+107,match
+108,match e1
+109,match e1
+110,clash e1
+111,clash
+112,clash e1
+113,clash e1
+114,clash
+115,clash
+116,clash e1
+117,clash e1
+118,match
+119,clash
+120,None
+121,clash e1
+122,clash e1
+123,clash e1
+124,clash e1
+125,match
+126,clash
+127,clash
+128,match
+129,clash e1
+130,match
+131,match
+132,None
+133,clash
+134,clash e1
+135,match
+136,clash
+137,clash
+138,clash
+139,match
