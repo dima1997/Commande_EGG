@@ -25,14 +25,6 @@ BLACK = (0,0,0)
 WHITE = (255,255,255)
 RED = (255,0,0)
 
-
-
-
-
-
-
-
-
 def consigne(WIN,sec,liste_consigne):
     WIN.fill(BLACK)
     width,height = 200,150
